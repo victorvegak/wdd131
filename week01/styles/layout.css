@@ -27,7 +27,7 @@ header {
     background-color: #0044cc;
     color: white;
     text-align: center;
-    row-gap: 1.5;
+    
 }
 
 main{
@@ -77,5 +77,5 @@ footer{
 
 .navigation ul li a:hover{
     background-color: #0033cc;
-};
+}
 

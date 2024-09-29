@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals -</title>
+    <meta name="description" content="WDD 131 -Dynamic Web Fundamentals - Victor Vega - course assignment, Dynamic web Fundamentals, Frontend, portal">
+    <meta name="author" content="Victor Vega">
+    <meta property="og:title" content="Victor Vega - WDD 131 - Dynamic Web Fundamentals">
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <h1>WDD 131 - Victor</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/victormanuelvega/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/morm/9?lang=eng&id=p21#p21">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="about-me">
+                <div class="me">
+                    <h2>About Me</h2>
+                    <img class="me-img" src="images/profile.webp" alt="Victor Vega" width="204" height="250">
+                    <p>Hello! My name is Victor Vega. I live in Managua, Nicaragua, with my wife. 
+                    And I am passionate about web development and exploring new technologies, 
+                    I enjoy playing video games and spending time with my wife,
+                    a talented gourmet pastry chef.</p>
+                </div>
+                <div class="location">
+                    <h3>Managua, Nicaragua</h3>
+                    <img class="nic" src="images/nicaragua.webp" alt="Nicaragua" width="290" height="174">
+                    <p>
+                        Managua is the capital and largest city of Nicaragua, located by Lake Managua. Known for its rich history and vibrant
+                        culture, it features attractions like the National Palace of Culture and the Loma de Tiscapa viewpoint. Despite
+                        challenges like earthquakes, Managua has grown into a bustling urban center with scenic views and a taste of traditional
+                        Nicaraguan cuisine.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources </h2>
+            <ul class="resources">
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                <li><a href="https://w3schools.com">W3Schools</a></li>
+                <li><a href="https://freecodecamp.org/">FreeCodeCampt</a></li>
+                <li><a href="https://picresize.com/">PicResize</a></li>
+                <li><a href="https://github.com/victorvegak">GitHub</a></li>
+                <li><a href="https://roadmap.sh/frontend">RoadMap</a></li>
+                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">2024</span> Victor Vega, Nicaragua</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+    </script>
 </body>
 </html>

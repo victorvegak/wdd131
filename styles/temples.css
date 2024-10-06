@@ -21,7 +21,7 @@ footer {
 
 body {
     color:var(--text-color);
-    background-color: var(--primary-color);
+    background-color: var(--bg-color);
     display: grid;
     grid-template-areas:
         "header"

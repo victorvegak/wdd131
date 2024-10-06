@@ -16,9 +16,18 @@
         /* hide hamburger button */
     }
 
-    header {
+    /*header {
         flex-direction: row;
+    }*/
+    header,footer {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
     }
+    .temples {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
     .navigation{
         flex-direction: row;
     }

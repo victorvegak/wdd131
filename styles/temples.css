@@ -3,11 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: "Roboto", sans-serif;
+
+:root {
+    --primary-color: #0f41a5;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --padding: 1rem;
+}
+
+
+body,
+header,
+footer {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #333;
-    background-color: #f4f4f4;
+}
+
+body {
+    color:var(--text-color);
+    background-color: var(--primary-color);
     display: grid;
     grid-template-areas:
         "header"
@@ -25,7 +39,7 @@ header {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #0f41a5;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -102,6 +116,12 @@ nav {
     /* just a wayfinding symbol for the user */
 }
 
+button:focus,
+a:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
 /* main */ 
 
 /* .temples  grid*/
@@ -123,7 +143,7 @@ nav {
 
 footer {
     grid-area: footer;
-    background-color: #0f41a5;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
 }

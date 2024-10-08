@@ -20,13 +20,14 @@ footer {
 }
 
 body {
+    display: grid;
     color:var(--text-color);
     background-color: var(--bg-color);
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
     grid-template-columns: 1fr;
+    /*grid-template-areas:
+            "header"
+            "main"
+            "footer";*/
     grid-template-rows: auto 1fr auto;
     /*Header and footer are auto-sized, content takes up remaining space*/
     gap: 1rem;
@@ -36,9 +37,11 @@ body {
 
 header {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     list-style: none;
     background-color: var(--primary-color);
     color: white;
+
 }
 
 h1 {
@@ -130,6 +133,7 @@ a:focus {
         align-items: center;
         margin-bottom: 3rem;
         padding: 1rem;
+        justify-items: center;
     }
 .temples img {
     width: 250px;
@@ -139,8 +143,8 @@ a:focus {
 }
 
 
+
 footer {
-    grid-area: footer;
     background-color: var(--primary-color);
     color: white;
     text-align: center;

@@ -2,8 +2,7 @@
 @media (min-width: 760px) {
     h1 {
         font-size: 2.5rem;
-        margin-left: 0;
-        text-align: center;
+    
     }
 
     h2 {
@@ -14,15 +13,6 @@
     #menu {
         display: none;
         /* hide hamburger button */
-    }
-
-    /*header {
-        flex-direction: row;
-    }*/
-    header,footer {
-        
-        grid-template-columns: 1fr auto;
-        align-items: center;
     }
 
     .navigation{

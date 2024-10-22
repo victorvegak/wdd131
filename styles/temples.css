@@ -12,9 +12,7 @@
 }
 
 
-body,
-header,
-footer {
+body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -32,7 +30,6 @@ body {
     /*Header and footer are auto-sized, content takes up remaining space*/
     gap: 1rem;
     /*spacing between the grid items*/
-    padding: 1rem;
 }
 
 header {
@@ -47,7 +44,7 @@ header {
 h1 {
     text-align: left;
     font-family: times, serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem;
     padding: 1rem;
 }
@@ -58,6 +55,16 @@ h2 {
     text-align: left;
     margin: 1rem;
 }
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 
 nav {
     max-width: 700px;
@@ -89,8 +96,6 @@ nav {
     list-style: none;
     background-color: #0f41a5;
     color: white;
-    padding: 1rem;
-    margin: 1rem;
 }
 
 .navigation a {
@@ -99,6 +104,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: white;
+    font-size: 1.5rem;
 }
 
 .navigation a:hover {
@@ -136,12 +142,20 @@ a:focus {
         justify-items: center;
     }
 .temples img {
-    width: 250px;
+    width: 100%;
     height: auto;
     box-shadow: 0 0 30px #777;
     margin: .5rem;
 }
-
+.temple-card {
+    border: 1px solid #0f0f0f;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 30px #979797
+}
 
 
 footer {
@@ -150,7 +164,3 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin: 1rem;
-    padding: 1rem;
-}

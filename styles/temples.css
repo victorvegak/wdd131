@@ -11,12 +11,6 @@
     --padding: 1rem;
 }
 
-
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
 body {
     display: grid;
     color:var(--text-color);
@@ -30,6 +24,8 @@ body {
     /*Header and footer are auto-sized, content takes up remaining space*/
     gap: 1rem;
     /*spacing between the grid items*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -154,7 +150,9 @@ a:focus {
     padding: 16px;
     margin: 10px;
     background-color: var(--bg-color);
-    box-shadow: 0 0 30px #979797
+    box-shadow: 0 0 30px #979797;
+    width: 100%;
+    height: auto;
 }
 
 

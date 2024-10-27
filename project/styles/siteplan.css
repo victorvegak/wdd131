@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #FFC1C1;
+    --secondary-color: #4B2E2E;
+    --text-color: #4B2E2E;
+    --tertiary-color: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --faded-color: hsl(0, 0%, 70%);
+    --border-color: hsl(0, 0%, 85%);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 1em;
+}
+
+header,
+footer {
+    background-color: #4B2E2E;
+    color: var(--tertiary-color);
+    text-align: center;
+    padding: 1em;
+}
+
+h1,
+h2 {
+    font-family: 'lora', serif;
+}
+
+
+section {
+    margin: 1em;
+    padding: 1em;
+    background-color: #FFF;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+section:hover {
+    transform: scale(1.02);
+}
+
+.wireframe {
+    justify-items: center;
+}
+
+footer p {
+    font-size: 0.9em;
+
+}

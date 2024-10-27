@@ -130,29 +130,29 @@ a:focus {
 /* .temples  grid*/
 .temples{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: .5rem;
-        align-items: center;
-        margin-bottom: 3rem;
-        padding: 1rem;
-        justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: .5rem;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            justify-items: center;
     }
 .temples img {
-    width: 100%;
+    width: 250px;
     height: auto;
     box-shadow: 0 0 30px #777;
     margin: .5rem;
 }
 .temple-card {
-    border: 1px solid #0f0f0f;
-    text-align: center;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 10px;
-    background-color: var(--bg-color);
-    box-shadow: 0 0 30px #979797;
-    width: 100%;
-    height: auto;
+    height: 400px;
+    margin: 5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 

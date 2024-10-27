@@ -4,55 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Victor Vega - Album Temples</title>
-    <meta name="description"
-        content="WDD 131 -Dynamic Web Fundamentals - Victor Vega - course assignment, Album Temples">
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Vega - Site plan</title>
+    <meta name="description" content="WDD 131 -Dynamic Web Fundamentals - Victor Vega - site plan">
     <meta name="author" content="Victor Manuel Vega">
-    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Victor Vega">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
+    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Victor Vega- Site plan">
+    <link rel="stylesheet" href="styles/siteplan.css">
     <meta property="og:image" content="images/og-image.jpg">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <h1>Site Plan</h1>
+        <Header>
+        <h1>WDD 131 Final Project Site Plan - Victor Vega</h1>
+        </Header>
+        
         <section>
             <h2>Site Name</h2>
-            <p>Sweet Creations by Liss</p>
-
-
+            <p><strong>Proposed Site Name:</strong> Sweet Creations By Liss</p>
+            <p><strong>Reason for Name Selection:</strong> The name "Sweet Creations by Liss" captures the essence of a bakery focused
+                on creating delicious, unique cakes and pastries. It’s simple, memorable, and perfect for branding.</p>
+        </section>
+        <section>
             <h2>Site Purpose</h2>
-            <p>This site provides information, photos, and maps (reviews?) of parks in Vancouver, WA to help parents
-                find places to take their children.</p>
-
+            <p>The purpose of this website is to showcase cakes and pastries made by a skilled pastry chef. The website
+             will provide information about the bakery's offerings, the ordering process, customer testimonials, and baking
+                tips through a blog. Users will be able to place custom orders and stay updated on upcoming events and
+                workshops.</p>
+        </section>
+        <section>
             <h2>Scenarios</h2>
             <ul>
-                <li>Which parks have playground equipment/walking trails/sport facilities?</li>
-                <li>When are the parks open?</li>
-                <li>How much parking does each park have?</li>
-                <li>Where are the different parks located?</li>
+                <li>How can I place a custom order for a wedding cake?</li>
+                <li>What types of pastries and cakes are available for delivery?</li>
             </ul>
-
+        </section>
+        <section>
             <h2>Color Schema</h2>
-            <p>Primary Color: #105030</p>
-            <p>Secondary Color: #F4F4E0</p>
-
+            <p>The following color schema will be used:</p>
+            <ul>
+                <li><strong>Main Color:</strong> Pastel Pink (#FFC1C1) – used for the header background, buttons, and accents.
+                </li>
+                <li><strong>Secondary Color:</strong> Dark Brown (#4B2E2E) – used for text, navigation, and footer background.
+                </li>
+                <li><strong>Tertiary Color: white(#fff) – used for titles, nav, header and footer</strong> </li>
+            </ul>
+        </section>
+        <section>
             <h2>Typography</h2>
-            <p>Heading Font: Merriweather</p>
-            <p>Body Font: Quicksand</p>
-
+            <ul>
+                <li><strong>Heading Font:</strong> Roboto – a serif font for headings and titles to give an elegant feel.</li>
+                <li><strong>Body Font:</strong> sans-serif – a clean sans-serif font for readability in the main content.</li>
+            </ul>
+        </section>
+        <section>
             <h2>Wireframe</h2>
-            <div class="wireframes">
-                <img class='wireframe-large' src="./images/1-Homepage.webp" alt="Homepage Large Wireframe">
-                <img class='wireframe-large' src="./images/3-Gallery.webp" alt="Search Large Wireframe">
-                <img class='wireframe-large' src="./images/5-Details.webp" alt="Details Large Wireframe">
-                <img class='wireframe-small' src="./images/2-Homepage-Small.webp" alt="Homepage Small Wireframe">
-                <img class='wireframe-small' src="./images/4-Gallery-Small.webp" alt="Search Small Wireframe">
-                <img class='wireframe-small' src="./images/6-Details-Small.webp" alt="Details Small Wireframe">
+            <p>Below are wireframe sketches for the mobile and desktop views of the home page layout.</p>
+            <div class="wireframe">
+                <h3>Mobile View</h3>
+                <img src="images/cell-p.webp" alt="Mobile wireframe for Sweet Creations home page" width="300" height= "400" loading="lazy">
+            </div>
+            <div class="wireframe">
+                <h3>Desktop View</h3>
+                <img src="images/home-p.webp" alt="Desktop wireframe for Sweet Creations home page" width="600" height="500" loading="lazy">
             </div>
         </section>
     </main>
@@ -60,7 +79,6 @@
         <p>&copy; <span id="currentYear"></span> Victor Vega, Nicaragua</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/temples.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/pro-getdates.js" defer></script>
 </body>
 </html>

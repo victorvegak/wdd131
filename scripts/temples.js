@@ -71,34 +71,34 @@ const temples = [
     dedicated: "1893, April, 24",
     area: 382207,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-9376.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple5.jpg",
   },
   {
-    templeName: "San Diego California",
-    location: "San Diego, California, United States",
-    dedicated: "1993, April, 25",
-    area: 72000,
+    templeName: "Logan Utah Temple",
+    location: "Logan, Utah, United States",
+    dedicated: "1884, May, 17",
+    area: 119619,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-48141.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-temple-768119-wallpaper.jpg",
   },
   {
-    templeName: "Sapporo Japan Temple",
-    location: "Sapporo, Japan",
-    dedicated: "2016, August, 21",
-    area: 48480,
+    templeName: "Vernal Utah Temple",
+    location: "Vernal, Utah, United States",
+    dedicated: "1997, Nov, 02",
+    area: 38771,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-5276.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-82531-wallpaper.jpg",
   },
 ];
 
-// Function to display temple cards
+//Function to display temple cards
 function displayTemples(templeList) {
   const templeContainer = document.querySelector(".temples");
   let templeHTML = ""; 
 
-  templeList.forEach((temple) => {
-    templeHTML += `
-      <div class="temple-card">
+ templeList.forEach((temple) => {
+  templeHTML += `
+     <div class="temple-card">
         <img src="${temple.imageUrl}" alt="Image of ${temple.templeName}" loading="lazy" width="400" height="250">
         <h3>${temple.templeName}</h3>
         <p>Location: ${temple.location}</p>
@@ -109,7 +109,7 @@ function displayTemples(templeList) {
   templeContainer.innerHTML = templeHTML;
 }
 
-// Initial display of all temples
+//Initial display of all temples
 displayTemples(temples);
 
 // Filter functions
@@ -128,15 +128,47 @@ document.querySelector('a[title="New"]').addEventListener("click", () => {
 });
 
 document.querySelector('a[title="Large"]').addEventListener("click", () => {
-  const largeTemples = temples.filter((temple) => temple.area > 90000);
-  displayTemples(largeTemples);
+const largeTemples = temples.filter((temple) => temple.area > 90000);
+displayTemples(largeTemples);
 });
 
 document.querySelector('a[title="Small"]').addEventListener("click", () => {
-  const smallTemples = temples.filter((temple) => temple.area < 10000);
+ const smallTemples = temples.filter((temple) => temple.area < 10000);
   displayTemples(smallTemples);
 });
 
 document.querySelector('a[title="Home"]').addEventListener("click", () => {
-  displayTemples(temples); // Show all temples
+displayTemples(temples); // Show all temples
 });
+
+
+/*createTempleCard(temples);
+
+function createTempleCard(filteredTemples) {
+  document.querySelector(".temples").innerHTML = "";
+  filteredTemples.forEach(temple => {
+    let card= document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document. createElement("p");
+    let dedication = document.createElement("P");
+    let area = document.createElement("p");
+    let img =  document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class = "label">Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class ="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class = "label">Size:</span> ${temple.area} sq ft`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+
+  card.appendChild(name);
+  card.appendChild(location);
+  card.appendChild(dedication);
+  card.appendChild(area);
+  card.appendChild(img);
+
+document.querySelector(".temples").appendChild(card);
+});
+}*/

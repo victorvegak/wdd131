@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Vega </title>
+    <meta name="description"
+        content="WDD 131 -Dynamic Web Fundamentals - Victor Vega - course assignment, Dynamic web Fundamentals, Frontend, portal">
+    <meta name="author" content="Victor Vega">
+    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Victor Vega">
+    <link rel="stylesheet" href="styles/form.css">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="reviewForm" action="review.html" method="get">
+            <!-- Product Name Select -->
+            <label for="productName">Product Name </label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Chose a Product ...&#9662;</option>
+                <!-- Options will be added with JavaScript -->
+            </select>
+        
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+            </fieldset>
+        
+            <!-- Date of Installation -->
+
+            <label>Date of Installation<input type="date" name="installationDate" required></label>        
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="ease_of_use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="value"> Performance</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+            </fieldset>
+        
+            <!-- Written Review -->
+            <label for="reviewText">Written Review </label>
+            <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+        
+            <!-- User Name -->
+            <label>Your Name<input type="text" name="userName"></label>        
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review">
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Victor Vega, Nicaragua</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/form.js"></script>
+</body>
+
+</html>

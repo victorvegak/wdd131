@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Vega - Final Project</title>
+    <meta name="description" content="WDD 131 -Dynamic Web Fundamentals - Victor Vega - Final Project">
+    <meta name="author" content="Victor Manuel Vega">
+    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Victor Vega- Final Project">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <Header>
+        <h1>Sweet Creation By Liss</h1>
+        <button type="button" id="menu" title="title"></button>
+        <nav class="navigation">
+            <a href="/project/index.html" title="Home">Home</a>
+            <a href="/project/gallery.html" title="Gallery">Gallery</a>
+            <a href="/project/contact.html" title="contact">Contact Us</a>
+        </nav>
+    </Header>
+    <main class="contact">
+        <form class="contactForm" action="thankyou.html" method="get">
+            <!-- User Name -->
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" name="userName" required>
+        
+            <!-- Email -->
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        
+            <!-- Subject Select -->
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Choose a Subject ...&#9662;</option>
+                <!-- Options will be added with JavaScript -->
+            </select>
+        
+            <!-- Message Textarea -->
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <!-- Submit Button -->
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Victor Vega, Nicaragua</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/pro-getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+    
+</body>
+
+</html>

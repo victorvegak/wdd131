@@ -1,0 +1,86 @@
+/* large view navigation ************************************/
+@media (min-width: 760px) {
+    body {
+            margin: 0 auto;
+        }
+    h1 {
+        font-size: 2.5rem;
+
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+        background-color: rgb(20, 12, 12);
+        margin-left: 50%;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .welcome {
+        position: absolute;
+        width: 300px;
+        padding: 10px;
+        background-color: rgba(249, 249, 249, 0.514);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        top: 400px;
+        left: 60px;
+    }
+    .welcome h2 {
+        margin-right: -40px;
+        text-align: left;
+        padding-left: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    }
+    .slides {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .slide.active img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .baker {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .baker img {
+        width: 600px;
+        height: 300px;
+        margin: auto;
+    }
+    
+    /*filter*/
+
+    #gallery h2 {
+        font-size: 1.25rem;
+        
+    }
+    
+    #filterBy {
+        font-size: 0.9rem;
+    }
+    
+    footer{
+        display: flex;
+       flex-direction: row;
+        justify-content: space-around;
+    }
+}

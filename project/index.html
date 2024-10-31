@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Vega - Final Project</title>
+    <meta name="description" content="WDD 131 -Dynamic Web Fundamentals - Victor Vega - Final Project">
+    <meta name="author" content="Victor Manuel Vega">
+    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Victor Vega- Final Project">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <Header>
+        <h1>Sweet Creation By Liss</h1>
+        <button type="button" id="menu" title="title"></button>
+        <nav class="navigation">
+            <a href="/project/index.html" title="Home">Home</a>
+            <a href="/project/gallery.html" title="Gallery">Gallery</a>
+            <a href="/project/contact.html" title="contact">Contact Us</a>
+        </nav>
+    </Header>
+    <main>
+        <div>
+            <picture class="hero">
+                <source media="(min-width: 1000px)" srcset="images/hero1.webp">
+                <source media="(min-width: 700px)" srcset="images/hero2.webp">
+                <img src="images/hero3.webp" alt="hero1" width="1390" height="600">
+            </picture>
+        </div>
+        <div class="welcome">
+            <h2>welcome</h2>
+            <p>Welcome to Sweet Creation By Liss, where every dessert is crafted to make your moments sweeter and unforgettable!</p>
+        </div>
+        <section class="slides">
+            <div class="slides-container">
+                <figure class="slide fade">
+                    <img src="images/dessert-1.webp" alt="Delicious layered dessert" width="400" height="200" loading="lazy">
+                    <figcaption>Layered dessert, perfect for any occasion.</figcaption>
+                </figure>
+                <figure class="slide fade">
+                    <img src="images/cake-1.webp" alt="Custom designed cake" width="400" height="200" loading="lazy">
+                    <figcaption>A custom-designed cake made to match your celebration.</figcaption>
+                </figure>
+                <figure class="slide fade">
+                    <img src="images/dessert-2.webp" alt="Delicate dessert with fresh fruits" width="400" height="200"
+                        loading="lazy">
+                    <figcaption>Delicate dessert topped with fresh fruits.</figcaption>
+                </figure>
+            </div>
+            <div class="cake-as-ur">
+                <p>Each cake is as unique as you are!
+                    That’s why at Sweet Creation By Liss, we customize your order.
+                    <br><br>
+                    Are you about to get married, celebrate a baptism, or host a themed party? Tell us how you imagine your
+                    dream
+                    celebration, and we'll create the perfect cake for it.
+                </p>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section class="baker">
+                <picture>
+                    <source media="(min-width: 300px)" srcset="images/liss.webp">
+                    <img class="liss" src="images/liss.webp" alt="Lisseth" width="300" height="300" loading="lazy">
+                </picture>
+            <div class="baker-tx">
+                <h2>HI! I'M LISS</h2>
+                <p>
+                    Sweet Creation by Liss is brought to life by a passionate young baker from Nueva Guinea, Nicaragua. With a love for
+                    creating beautiful and delicious cakes, she pours her heart and skill into every order.<br> <br>From the aroma of
+                    fresh-baked treats to the artistry of custom decorations, her work is all about sharing joy through flavor and
+                    design. Each cake is not just a dessert—it’s a dream crafted for your special moments.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Victor Vega, Nicaragua</p>
+        <p id="lastModified"></p>
+        <p id="visitCount">Loading visit count...</p>
+    </footer>
+    <script src="scripts/pro-getdates.js" defer></script>
+    <script src="scripts/slide.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/count1.js" defer></script>
+</body>
+
+</html>
